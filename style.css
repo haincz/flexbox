@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+nav ul li {
+  display: flex;
+
+}
+
+nav ul li a {
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #f7f7f7;
+}
+
+.jumbotron {
+  display: flex;
+  height: calc(100vh - 52px);
+  background-color: #a4fbea;
+  align-items: center;
+  justify-content: center;
+  background-image: url(http://www.tapeciarnia.pl/tapety/normalne/249860_sciana_graffiti_rozne_kolory_tlo_dla_dzieci.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron h1 {
+  display: flex;
+  color: #fff;
+}
+
+.gallery {
+  /*flex-wrap: wrap;*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.img img {
+  height: 300px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.cards {
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.card {
+  width: 200px;
+  background-color: #afaf32;
+  display: flex;
+  margin: 10px;
+  justify-content:center;
+}
+
+footer {
+  background-color: #bfbfbf;
+}
+
+.copyrights,
+.companyname,
+.adress {
+  display: flex;
+  justify-content: center;
+
+}
+
+.companyname {
+  flex-grow: 2;
+}
+
+@media (max-width: 1199px) {
+  .gallery {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img img {
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 410px) {
+  footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
